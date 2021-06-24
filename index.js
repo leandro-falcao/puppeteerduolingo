@@ -1,5 +1,6 @@
 
-const puppeteer = require('puppeteer')
+const puppeteer = require('puppeteer');
+const { setTimeout } = require('timers');
  
 // let scrape = async () => {
 
@@ -45,10 +46,16 @@ const navegador = async () => {
     
     const acessarContaF = function(){
       
-      let alS = document.querySelectorAll('div._2rjZr input._3MNft.fs-exclude')[1].value = 'ewwe123233'
-      let alS = document.querySelectorAll('div._2rjZr input._3MNft.fs-exclude')[1].value = 'ewwe123233'
+      let acessarConta = document.querySelector('._3uMJF a').click();
+      setTimeout(() => {
+        let dadosLoginEmail = document.querySelectorAll('div._2rjZr input._3MNft.fs-exclude')[0].value = "leandrofalcaoti@gmail.com";
+        let dadosLoginPassword = document.querySelectorAll('div._2rjZr input._3MNft.fs-exclude')[1].value = `k11l12kl88192288`
+        setTimeout(() => {
+          let dadosLoginClick = document.querySelectorAll('button._2oW4v')[0].click()
+        }, 955);
+        
+      }, 1555);
       
-      // let acessarConta = document.querySelector('._3uMJF a').click();
       
       //  let acessarContaEmail = document.querySelector('._3MNft')
       //     acessarContaEmail.innerText = 'lasdsad'
